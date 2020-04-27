@@ -293,7 +293,7 @@ Table.propTypes = {
       points: PropTypes.number,
     })
   ).isRequired,
-  onDismiss: PropTypes.func.isRequired,
+  onDismiss: PropTypes.func,
 };
 const Button = ({ onClick, className = '', children }) =>
   <button
@@ -312,7 +312,7 @@ Button.defaultProps = {
   className: '',
 };
 Button.propTypes = {
-  onClick: PropTypes.func.isRequired,
+  onClick: PropTypes.func,
   className: PropTypes.string,
   children: PropTypes.node.isRequired,
 };
