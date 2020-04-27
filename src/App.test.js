@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import renderer from 'react-test-renderer';
 import { shallow } from 'enzyme';
 import App, { Search, Button, Table } from './App';
-/*describe('App', () => {
+describe('App', () => {
   it('renders', () => {
     const div = document.createElement('div');
     ReactDOM.render(<App />, div);
@@ -15,7 +15,7 @@ import App, { Search, Button, Table } from './App';
     let tree = component.toJSON();
     expect(tree).toMatchSnapshot();
   });
-});*/
+});
 describe('Search', () => {
   it('renders', () => {
     const div = document.createElement('div');
