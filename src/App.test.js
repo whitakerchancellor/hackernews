@@ -1,8 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import renderer from 'react-test-renderer';
-import { shallow } from 'enzyme';
+import { mount, render, shallow, configure } from 'enzyme';
+import Adapter from 'enzyme-adapter-react-16';
 import App, { Search, Button, Table } from './App';
+configure({ adapter: new Adapter() });
+global.mount = mount;
+global.render = render;
+global.shallow = shallow;
 describe('App', () => {
   it('renders', () => {
     const div = document.createElement('div');
@@ -61,10 +66,10 @@ describe('Table', () => {
     );
     let tree = component.toJSON();
   });
-  it('shows 100 items in list', () => {
+  it('shows two items in list', () => {
     const element = shallow(
       <Table {...props} />
     );
-    expect(element.find('.table-row').length).toBe(100);
+    expect(element.find('.table-row').length).toBe(2);
   });
 });
