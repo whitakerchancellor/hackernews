@@ -61,10 +61,10 @@ describe('Table', () => {
     );
     let tree = component.toJSON();
   });
-  /*it('shows two items in list', () => {
+  it('shows 100 items in list', () => {
     const element = shallow(
       <Table {...props} />
     );
-    expect(element.find('.table-row').length).toBe(2);
-  });*/
+    expect(element.find('.table-row').length).toBe(100);
+  });
 });

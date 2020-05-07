@@ -11,7 +11,7 @@ const PATH_SEARCH = '/search';
 const PARAM_SEARCH = 'query=';
 const PARAM_PAGE = 'page=';
 const PARAM_HPP = 'hitsPerPage=';
-const list = [
+/*const list = [
   {
     title: 'React',
     url: 'https://facebook.github.io/react/',
@@ -34,7 +34,7 @@ function isSearched(searchTerm) {
     return !searchTerm ||
       item.title.toLowerCase().includes(searchTerm.toLowerCase());
   }
-}
+}*/
 const SORTS = {
   NONE: list => list,
   TITLE: list => sortBy(list, 'title'),
