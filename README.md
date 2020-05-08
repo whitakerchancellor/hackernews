@@ -8,6 +8,10 @@ In our computer science senior seminar at Eastern Kentucky University, the stude
 
 ## Screenshots
 
+![](images/Screenshot1.png)
+
+![](images/Screenshot2.png)
+
 ## Try Out
 
 https://whitakerchancellor.github.io/hackernews/
