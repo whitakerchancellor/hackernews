@@ -33,6 +33,11 @@ describe('App', () => {
     expect(tree).toMatchSnapshot();
   });*/
 });
+describe('General test', () => {
+    test('Always Pass Test', () => {
+      expect(true).toEqual(true);
+    });
+  });
 describe('Search', () => {
   it('renders', () => {
     const div = document.createElement('div');
@@ -71,6 +76,9 @@ describe('Table', () => {
   it('renders', () => {
     const div = document.createElement('div');
     ReactDOM.render(<Table {...props} />, div);
+  });
+  test('Creates Table', () => {
+    expect(wrapper.find(Table).length).toEqual(1);
   });
   test('snapshots', () => {
     const component = renderer.create(
