@@ -17,6 +17,14 @@ describe('App', () => {
     const wrapper = mount(<App />);
     expect(wrapper.find(Table).length).toEqual(1);
   });
+  it('renders the Search component', () => {
+    const wrapper = mount(<App />);
+    expect(wrapper.find(Search).length).toEqual(1);
+  });
+  it('renders four Button components', () => {
+    const wrapper = mount(<App />);
+    expect(wrapper.find(Button).length).toEqual(4);
+  });
   /*test('snapshots', () => {
     const component = renderer.create(
       <App />
