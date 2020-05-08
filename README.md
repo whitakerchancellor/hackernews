@@ -1,5 +1,21 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Introduction
+
+In our computer science senior seminar at Eastern Kentucky University, the students created their first React application by following the source code in the Road to Learn React book. We added our applications to GitHub. Then we set up continuous integration by adding Travis CI to our GitHub accounts. We added enzyme tests to our application. Then we used Travis CI to automatically build our applications and deploy them on GitHub Pages. We were then instructed to work in pairs and add pull requests to our partner's application. We forked our partner's repository, installed their project, and if it was broken, submitted a pull request fixing their project. We added two enzyme tests to their project and issued a pull request. Then we issued a pull request to make the last search term in the application be remembered when it is reloaded.
+
+## Technical Features
+
+## Screenshots
+
+## Try Out
+
+https://whitakerchancellor.github.io/hackernews/
+
+## Contributions
+
+Thanks Evan T. Wright (github.com/EvanTWright) for the pull request that added functionality to save the last search term and added grey lines to every other row in the table in my application. Thanks also for the other pull request that added two enzyme tests.
+
 ## Available Scripts
 
 In the project directory, you can run:
