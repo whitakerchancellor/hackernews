@@ -6,6 +6,8 @@ In our computer science senior seminar at Eastern Kentucky University, the stude
 
 ## Technical Features
 
+From the Road to Learn React book, We learned how to bootstrap our own React application. We were introduced to JSX and ES6, we learned React basics like internal component state and unidirectional data flow, how to fetch data from an API, how to do snapshot tests with Jest and unit tests with Enzyme, advanced React components such as higher order components, and state management. We learned continuous integration by adding Travis CI to our GitHub accounts, and learned automatic deployment with Travis CI and GitHub Pages.
+
 ## Screenshots
 
 ![](images/Screenshot1.png)
