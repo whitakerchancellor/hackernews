@@ -10,9 +10,11 @@ From the Road to Learn React book, We learned how to bootstrap our own React app
 
 ## Screenshots
 
-![](images/Screenshot1.png)
+What the application looks like when it has been launched. You can filter the table by typing in a new search term and hitting the Search button. If you reload the application, the last search term will be remembered. You can dismiss a search result by hitting the dismiss button on a search result.
+![](/images/Screenshot1.PNG)
 
-![](images/Screenshot2.png)
+If the search exceeds 100 results, you can scroll down to the bottom and hit the More button to load more results.
+![](/images/Screenshot2.PNG)
 
 ## Try Out
 
