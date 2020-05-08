@@ -13,11 +13,15 @@ describe('App', () => {
     const div = document.createElement('div');
     ReactDOM.render(<App />, div);
   });
+  it('renders the Table component', () => {
+    const wrapper = mount(<App />);
+    expect(wrapper.find(Table).length).toEqual(1);
+  });
   /*test('snapshots', () => {
     const component = renderer.create(
       <App />
     );
-    let tree = component.toJSON();
+    const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
   });*/
 });
