@@ -1,20 +1,37 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import renderer from 'react-test-renderer';
-import { shallow } from 'enzyme';
+import { mount, render, shallow, configure } from 'enzyme';
+import Adapter from 'enzyme-adapter-react-16';
 import App, { Search, Button, Table } from './App';
+configure({ adapter: new Adapter() });
+global.mount = mount;
+global.render = render;
+global.shallow = shallow;
 describe('App', () => {
   it('renders', () => {
     const div = document.createElement('div');
     ReactDOM.render(<App />, div);
   });
-  test('snapshots', () => {
+  it('renders the Table component', () => {
+    const wrapper = mount(<App />);
+    expect(wrapper.find(Table).length).toEqual(1);
+  });
+  it('renders the Search component', () => {
+    const wrapper = mount(<App />);
+    expect(wrapper.find(Search).length).toEqual(1);
+  });
+  it('renders four Button components', () => {
+    const wrapper = mount(<App />);
+    expect(wrapper.find(Button).length).toEqual(4);
+  });
+  /*test('snapshots', () => {
     const component = renderer.create(
       <App />
     );
-    let tree = component.toJSON();
+    const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
-  });
+  });*/
 });
 describe('General test', () => {
     test('Always Pass Test', () => {
